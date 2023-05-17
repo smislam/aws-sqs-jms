@@ -22,4 +22,4 @@ If all goes well, you should see this:
 * ![image](sqs-consumed.PNG "Messages consumed from SQS")
 
 ### Notes
-* This exaple uses JMSTemplate.  I have also used SQSConnectionfactory to send and consume messages.  If that is your requirement, uncomment those code and use them.
+* This exaple uses JmsTemplate.  I have also used SQSConnectionFactory to send and consume messages.  If that is your requirement, uncomment those code and use them.
