@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: message
+
+sqs:
+  name: superqueue
