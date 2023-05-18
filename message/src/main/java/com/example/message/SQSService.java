@@ -21,6 +21,12 @@ public class SQSService {
         return "Message Sent: " + message;
     }
 
+    // //Configure JmsTemplate to use this method
+    // public String send(String message) {
+    //     jmsTemplate.convertAndSend(message);
+    //     return "Message Sent: " + message;
+    // }
+
     public Message receive(String queueName) {
         return jmsTemplate.receive(queueName);
     }
