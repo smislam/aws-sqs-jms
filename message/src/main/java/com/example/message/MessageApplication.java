@@ -37,10 +37,11 @@ public class MessageApplication {
 						new ExtendedClientConfiguration().withPayloadSupportEnabled(s3Client, queueName)));
 	}
 
-	@Bean
-	public JmsTemplate createJmsTemplate() {
-	  JmsTemplate jmsTemplate = new JmsTemplate(this.createConnectionFactory());
-	  jmsTemplate.setDefaultDestinationName(queueName);
-	  return jmsTemplate;
-	}
+	// // Uncomment this code if you want JmsTemplate configured with specific queue.  That way, you will not have to pass the queuname in the controller.
+	// @Bean
+	// public JmsTemplate createJmsTemplate() {
+	// 	JmsTemplate jmsTemplate = new JmsTemplate(this.createConnectionFactory());
+	// 	jmsTemplate.setDefaultDestinationName(queueName);
+	// 	return jmsTemplate;
+	// }
 }
